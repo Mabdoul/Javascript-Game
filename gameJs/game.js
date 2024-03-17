@@ -4,12 +4,12 @@ const scoreText = document.querySelector("#scoreText");
 const restBtn = document.querySelector("#resetBtn");
 const gameWidth =gameBoard.width;
 const gameHeight =gameBoard.height;
-const boardBackground = "forestgreen";
+const boardBackground = "blue";
 const paddle1color = "lightblue";
-const paddle2color = "red";
-const paddleBorder = "black";
+const paddle2color = "black";
+const paddleBorder = "white";
 const ballColor = "orange";
-const ballBorderColor = "black";
+const ballBorderColor = "white";
 const ballRadius = 12.5;
 const paddleSpeed = 50;
 let intervalID;
@@ -194,6 +194,13 @@ function resetGame(){
     updateScore();
     clearInterval(intervalID);
     gameStart();
+
+
+};
+
+
+
+
 
 
 };
